@@ -21,7 +21,7 @@ Acknowledgement
 
 The ``asm2dn2o`` package was prepared by Dr. Taher Abunama, based on the original model development by Prof. Krist V. Gernaey and his team (PROSYS, DTU).
 
-The ``asm2dn2o`` package was initially prepared during the `eWatLink <https://cebedeau.be/fr/nos-chroniques/article/projet-ewatlink>`_ project at
+The ``asm2dn2o`` package was prepared during the `eWatLink <https://cebedeau.be/fr/nos-chroniques/article/projet-ewatlink>`_ project at
 `SPGE <https://www.spge.be/en/index.html?IDC=1>`_ and `CEBEDEAU <https://cebedeau.be/fr>`_,
 through the `BEWARE Fellowships <https://recherche.wallonie.be/en/home/nos-aides-1/engager-du-personnel-de-recherche-human/beware-fellowships.html>`_
 programme funded by the European Commission and SPW Research, within the broader
