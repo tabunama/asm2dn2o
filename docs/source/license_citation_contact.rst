@@ -24,7 +24,7 @@ The ``asm2dn2o`` package was developed by Dr Taher Abunama (tabunama@gmail.com) 
 Process and Systems Engineering Center, Technical University of Denmark (DTU),
 under the Head of PROSYS: Prof. Krist V. Gernaey,
 Department of Chemical and Biochemical Engineering
-(`kvg@kt.dtu.dk <mailto:kvg@kt.dtu.dk>`_).
+(`kvg@kt.dtu.dk <mailto:kvg@kt.dtu.dk>`_), Dr Xavier Flores-Alsina and Tianyu Lei.
 
 Part of the work underlying ``asm2dn2o`` was also carried out under the
 `eWatLink <https://cebedeau.be/fr/nos-chroniques/article/projet-ewatlink>`_ project at
