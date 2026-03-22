@@ -59,5 +59,4 @@ ASM2d-N2O simulations:
    unit_modules/index
    configuration/index
    examples/index
-   developer_guide
    license_citation_contact
