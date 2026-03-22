@@ -70,14 +70,12 @@ future. You are always welcome to contact us on such matters.
 
 Sincerely,
 
-- Tianyu Lei (tilei@kt.dtu.dk)
-- Dr Xavier Flores-Alsina (xfa@kt.dtu.dk)
-- Dr Krist V. Gernaey (kvg@kt.dtu.dk)
+- Prof Krist V. Gernaey (kvg@kt.dtu.dk)
 
 Contact
 -------
 
 - Dr Taher Abunama — tabunama@gmail.com
+- Prof Krist V. Gernaey — kvg@kt.dtu.dk
 - Dr Xavier Flores-Alsina — xfa@kt.dtu.dk
-- Dr Krist V. Gernaey — kvg@kt.dtu.dk
 - Tianyu Lei — tilei@kt.dtu.dk
