@@ -1,0 +1,23 @@
+# Python envs
+.venv/
+.venv_test/
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Docs build
+docs/build/
+
+# Private source folders
+c_core/
+cython/
+
+# Optional local/helper files
+run_build.txt
+check.py
