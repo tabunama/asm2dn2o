@@ -19,7 +19,7 @@ Dr Taher Abunama (tabunama@gmail.com)
 Acknowledgements
 ----------------
 
-The ``asm2dn2o`` package was prepared by Dr. Taher Abunama, based on the original model development by Prof. Krist V. Gernaey and his team (PROSYS, DTU).
+The ``asm2dn2o`` package was prepared by Dr. Taher Abunama, based on the original model by Prof. Krist V. Gernaey and his team (PROSYS, DTU).
 
 The ``asm2dn2o`` package was prepared during the `eWatLink <https://cebedeau.be/fr/nos-chroniques/article/projet-ewatlink>`_ project at
 `SPGE <https://www.spge.be/en/index.html?IDC=1>`_ and `CEBEDEAU <https://cebedeau.be/fr>`_,

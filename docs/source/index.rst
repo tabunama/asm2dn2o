@@ -17,7 +17,7 @@ inputs in Python.
 Acknowledgement
 ---------------
 
-The ``asm2dn2o`` package was prepared by Dr. Taher Abunama, based on the original model development by Prof. Krist V. Gernaey and his team (PROSYS, DTU).
+The ``asm2dn2o`` package was prepared by Dr. Taher Abunama, based on the original model by Prof. Krist V. Gernaey and his team (PROSYS, DTU).
 
 The ``asm2dn2o`` package was prepared during the `eWatLink <https://cebedeau.be/fr/nos-chroniques/article/projet-ewatlink>`_ project at
 `SPGE <https://www.spge.be/en/index.html?IDC=1>`_ and `CEBEDEAU <https://cebedeau.be/fr>`_,
@@ -47,30 +47,7 @@ ASM2d-N2O simulations:
 - ``combiner``: two-stream mixing.
 - ``delay``: hydraulic transport and recycle delay handling.
 
-What the package does **not** contain by itself:
 
-- plant-specific parameter vectors,
-- site-specific initialization matrices,
-- a universal CSV/NPZ importer for every data source,
-- a one-click full WWTP simulator.
-
-Users should therefore think in two layers:
-
-1. the pip-installed compiled package,
-2. a user project containing configuration files, input data, and a main simulation driver.
-
-Quick links
------------
-
-New users usually need to answer five questions quickly:
-
-- What does the package do?
-- How do I install it?
-- Which files must I prepare?
-- How do I build a main driver?
-- Which example should I start from?
-
-The pages in this documentation are organised around exactly those questions.
 
 .. toctree::
    :maxdepth: 2
