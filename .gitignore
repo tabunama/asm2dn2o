@@ -21,3 +21,10 @@ cython/
 # Optional local/helper files
 run_build.txt
 check.py
+
+
+MANIFEST.in
+TR/
+asm2dn2o/
+pyproject.toml
+setup.py
