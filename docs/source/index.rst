@@ -1,9 +1,25 @@
 asm2dn2o
+=========
 
+Python package release for ASM2d-N2O modelling.
+
+.. toctree::
+   :maxdepth: 2
+   :caption: User Guide
+
+   installation
+   running
+   inputs_outputs/index
+   unit_modules/index
+   configuration/index
+   examples/index
+   developer_guide
+   license_citation_contact
+   
 Acknowledgement
 ---------------
 
-The ``asm2dn2o`` package was developed by Taher Abunama with collaboration from
+The ``asm2dn2o`` package was developed by Dr Taher Abunama (tabunama@gmail.com) with collaboration from
 `PROSYS <https://www.kt.dtu.dk/research/prosys>`_,
 Process and Systems Engineering Center, Technical University of Denmark (DTU),
 under the Head of PROSYS: Prof. Krist V. Gernaey,
@@ -21,19 +37,3 @@ and the `Marie Skłodowska-Curie Actions <https://marie-sklodowska-curie-actions
 For license, attribution, and contact information, see
 :doc:`license_citation_contact`.
 
-=========
-
-Python package release for ASM2d-N2O modelling.
-
-.. toctree::
-   :maxdepth: 2
-   :caption: User Guide
-
-   installation
-   running
-   inputs_outputs/index
-   unit_modules/index
-   configuration/index
-   examples/index
-   developer_guide
-   license_citation_contact

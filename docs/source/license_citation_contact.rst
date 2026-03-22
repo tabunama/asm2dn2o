@@ -19,7 +19,7 @@ Dr Taher Abunama (tabunama@gmail.com)
 Acknowledgements
 ----------------
 
-The ``asm2dn2o`` package was developed by Taher Abunama with collaboration from
+The ``asm2dn2o`` package was developed by Dr Taher Abunama (tabunama@gmail.com) with collaboration from
 `PROSYS <https://www.kt.dtu.dk/research/prosys>`_,
 Process and Systems Engineering Center, Technical University of Denmark (DTU),
 under the Head of PROSYS: Prof. Krist V. Gernaey,

@@ -5,7 +5,8 @@ sys.path.insert(0, os.path.abspath("../.."))
 
 project = "asm2dn2o"
 author = "Taher Abunama"
-release = "0.1.0"
+copyright = "2026, tabunama"
+release = "0.1.1"
 
 extensions = [
     "myst_parser",
