@@ -1,6 +1,12 @@
 Configuration Files
 ===================
 
+Purpose
+-------
+
+This section explains the companion configuration modules typically used around
+the package in the BAS reference workflow.
+
 .. toctree::
    :maxdepth: 1
 

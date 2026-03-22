@@ -1,21 +1,19 @@
 asm2dn2o
 =========
 
-Python package release for ASM2d-N2O modelling.
+Python package release for ASM2d-N2O dynamic process modelling.
 
-.. toctree::
-   :maxdepth: 2
-   :caption: User Guide
+``asm2dn2o`` publishes four compiled unit-model modules under one namespace:
 
-   installation
-   running
-   inputs_outputs/index
-   unit_modules/index
-   configuration/index
-   examples/index
-   developer_guide
-   license_citation_contact
-   
+.. code-block:: python
+
+   from asm2dn2o import asm2d_n2o, clarifiers, combiner, delay
+
+The package is designed as a compact modelling kernel rather than a complete end-user
+application. Plant-wide simulations are assembled around these compiled units by
+preparing the required arrays, parameter vectors, initial conditions, and time-series
+inputs in Python.
+
 Acknowledgement
 ---------------
 
@@ -38,3 +36,51 @@ Department of Chemical and Biochemical Engineering
 For license, attribution, and contact information, see
 :doc:`license_citation_contact`.
 
+What the package contains
+-------------------------
+
+The current wheel provides the reusable computational blocks needed to build dynamic
+ASM2d-N2O simulations:
+
+- ``asm2d_n2o``: the main biochemical reactor kernel.
+- ``clarifiers``: primary and secondary clarifier wrappers.
+- ``combiner``: two-stream mixing.
+- ``delay``: hydraulic transport and recycle delay handling.
+
+What the package does **not** contain by itself:
+
+- plant-specific parameter vectors,
+- site-specific initialization matrices,
+- a universal CSV/NPZ importer for every data source,
+- a one-click full WWTP simulator.
+
+Users should therefore think in two layers:
+
+1. the pip-installed compiled package,
+2. a user project containing configuration files, input data, and a main simulation driver.
+
+Quick links
+-----------
+
+New users usually need to answer five questions quickly:
+
+- What does the package do?
+- How do I install it?
+- Which files must I prepare?
+- How do I build a main driver?
+- Which example should I start from?
+
+The pages in this documentation are organised around exactly those questions.
+
+.. toctree::
+   :maxdepth: 2
+   :caption: User Guide
+
+   installation
+   running
+   inputs_outputs/index
+   unit_modules/index
+   configuration/index
+   examples/index
+   developer_guide
+   license_citation_contact
