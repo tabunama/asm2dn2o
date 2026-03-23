@@ -35,6 +35,13 @@ Upstream license agreement / academic-use terms (DTU/PROSYS)
 Dear Colleague,
 DTU researchers have developed the ASM2d_N2O model you have downloaded.
 The models are available for the Matlab®/Simulink® platform. We have used Matlab release 2019b but the models will also work fine on later releases.
+Matlab®/Simulink® Original development / modification lineage:
+•	Krist V. Gernaey (DTU/PROSYS, 2004)
+•	Xavier Flores-Alsina (Lund University, 2010; later DTU/PROSYS)
+•	Kimberly Solon (Lund University, 2016)
+•	Borja Soles (UAB, 2020)
+•	Tianyu Lei (DTU/PROSYS, 2023)
+•	Taher Abunama (SPGE/CEBEDEAU, 2025)
 The ASM2d_N2O model includes activated sludge units with N2O production/conversion processes and additional gas-liquid transfer process in covered reactors, clarifies units, flotation units and potential inter-connections among those units. The ASR receives influents from anaerobic line effluent and reject water from decanters in biomass treatment line.
 In principle, we provide these implementations for free in a true academic spirit and can therefore not offer any traditional support. You may contact us to discuss various aspects of the models, but we do not guarantee that we can find time to assist you. However, we do ask you to:
 •	Send us feedback in case you find errors or possible improvements to the implementations or if you come across operational situations where any of the implementations behave differently or strangely compared to others;

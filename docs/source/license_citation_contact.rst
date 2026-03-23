@@ -44,6 +44,15 @@ DTU researchers have developed the ASM2d_N2O model you have downloaded.
 The models are available for the Matlab®/Simulink® platform. We have used
 Matlab release 2019b but the models will also work fine on later releases.
 
+Matlab®/Simulink® Original development / modification lineage:
+
+- Krist V. Gernaey (DTU/PROSYS, 2004)
+- Xavier Flores-Alsina (Lund University, 2010; later DTU/PROSYS)
+- Kimberly Solon (Lund University, 2016)
+- Borja Soles (UAB, 2020)
+- Tianyu Lei (DTU/PROSYS, 2023)
+- Taher Abunama (SPGE/CEBEDEAU, 2025)
+
 The ASM2d_N2O model includes activated sludge units with N2O
 production/conversion processes and additional gas-liquid transfer process in
 covered reactors, clarifiers units, flotation units and potential

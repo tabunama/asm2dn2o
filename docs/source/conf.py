@@ -5,7 +5,7 @@ sys.path.insert(0, os.path.abspath("../.."))
 
 project = "asm2dn2o"
 author = "Taher Abunama"
-copyright = "2026, tabunama"
+copyright = "2026, wwtmodels, PROSYS"
 release = "0.1.1"
 
 extensions = [
