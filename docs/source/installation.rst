@@ -44,38 +44,6 @@ separate user project where you define:
 - flowsheet logic,
 - plotting and calibration routines.
 
-Recommended project layout
---------------------------
-
-A practical user project usually has this structure:
-
-.. code-block:: text
-
-   user_project/
-   ├─ data/
-   │  ├─ infl56_case.npz
-   │  ├─ time_case.npz
-   │  ├─ pH_case.npz
-   │  └─ measured_flows.npz
-   ├─ parameters/
-   │  ├─ bas_init_sets.py
-   │  ├─ bas_par_sets.py
-   │  ├─ bas_clarifiers.py
-   │  └─ bas_interface.py
-   ├─ run_case.py
-   └─ plots/
-
-Smoke test
-----------
-
-A compact smoke test is:
-
-.. code-block:: python
-
-   from asm2dn2o import asm2d_n2o, clarifiers, combiner, delay
-
-   print("Modules available:")
-   print(asm2d_n2o, clarifiers, combiner, delay)
 
 Notes
 -----
