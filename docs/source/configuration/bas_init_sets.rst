@@ -4,63 +4,60 @@ bas_init_sets.py
 Purpose
 -------
 
-``bas_init_sets.py`` stores mode-specific initial conditions for the BAS reference
-workflow.
+``bas_init_sets.py`` stores the mode-specific initialization matrices used to build
+``XINIT_AR``, ``XINIT_AX``, and ``XINIT_DELAY``. The helper currently supports
+``ss``, ``dy``, and ``120d`` modes. fileciteturn17file2
 
-Main role
----------
+How the helper works
+--------------------
 
-The helper exposes combined initialization matrices and returns three one-dimensional
-vectors:
-
-- ``XINIT_AR``
-- ``XINIT_AX``
-- ``XINIT_DELAY``
-
-Supported modes
----------------
-
-The current helper supports:
-
-- ``ss``
-- ``dy``
-- ``120d``
-
-Return convention
------------------
-
-The public helper pattern is:
-
-.. code-block:: python
-
-   XINIT_AR, XINIT_AX, XINIT_DELAY = build_XINIT_sets(mode)
-
-Internal structure
-------------------
-
-Each combined matrix stores columns in the order:
+Each mode is stored as a 56 x 3 matrix with columns:
 
 - AR
 - AX
 - DELAY
 
-That matrix organisation is useful because it keeps all state values visible while
-still allowing the driver to extract the exact 56-element vectors required by the
-compiled kernels.
+The builder then returns:
 
-Recommended user practice
--------------------------
+.. code-block:: python
 
-When adapting the file for a new plant:
+   XINIT_AR, XINIT_AX, XINIT_DELAY = build_XINIT_sets(mode)
 
-- preserve the 56-state order,
-- preserve the column meaning,
-- keep units consistent with the rest of the project,
-- check that biomass and nitrogen states reflect the intended operating mode.
+Why this file matters
+---------------------
 
-Notes
------
+Initialization is not a minor detail. It defines the first physically consistent
+reactor, recycle, and transport states seen by the time loop. Unrealistic early
+transients are often caused by inconsistent initialization rather than by wrong
+kinetic parameters.
 
-It is perfectly acceptable to replace the combined-matrix style with direct
-``XINIT_AR`` / ``XINIT_AX`` / ``XINIT_DELAY`` arrays, as long as the final
-vectors are still 56-element arrays in the correct order.
+What should be reviewed first for a new site
+--------------------------------------------
+
+When adapting the file, review these groups first:
+
+- dissolved oxygen and nitrogen states,
+- biomass inventories ``X_H``, ``X_PAO``, ``X_AOB``, ``X_NOB``,
+- flow and temperature,
+- precipitation / inorganic solids if the chemistry extensions are active.
+
+Mode summary
+------------
+
+.. list-table::
+   :header-rows: 1
+
+   * - Mode
+     - Typical use
+     - Key observation
+   * - ss
+     - pseudo steady-state warm start
+     - AR starts with higher oxygen and high heterotrophic / nitrifier biomass
+   * - dy
+     - dynamic case warm start
+     - lower ``X_H`` and altered dissolved nitrogen pools relative to SS
+   * - 120d
+     - long measured-data replay
+     - nitrifier states differ from SS and are tailored to the long replay case
+
+For the full numeric values, see the ``Initial Conditions`` page.

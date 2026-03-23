@@ -4,26 +4,26 @@ State Vector
 Purpose
 -------
 
-The package is array-driven. A process stream is represented by a fixed-order
-56-state vector. Correct ordering is essential.
+The package is array-driven. Every stream exchanged between the public unit modules is
+a fixed-order 56-state vector. Correct ordering is mandatory. The reactor wrapper then
+extends that stream to a 62-entry runtime input and returns a 101-entry output, where
+the first 56 entries are the outlet liquid state.
 
-General convention
-------------------
+Core conventions
+----------------
 
-- 56-state stream: standard liquid stream exchanged between unit blocks.
-- 62-entry reactor input ``u``: stream + control / auxiliary entries.
-- 101-entry reactor output ``y``: first 56 entries are the liquid outlet stream.
+- 56-state stream = standard liquid stream exchanged between units.
+- 62-entry reactor input ``u`` = stream + runtime control / auxiliary entries.
+- 101-entry reactor output ``y`` = liquid outlet + extra calculated outputs.
 
-Key index conventions
----------------------
-
-The most frequently used indices are:
+Key indices
+-----------
 
 .. list-table::
    :header-rows: 1
 
-   * - Simulink index (1-based)
-     - Python index (0-based)
+   * - Simulink index
+     - Python index
      - Meaning
    * - 1
      - 0
@@ -34,202 +34,201 @@ The most frequently used indices are:
    * - 7
      - 6
      - S_N2O
-   * - 9
-     - 8
-     - S_NO2
    * - 10
      - 9
      - S_NO3
    * - 37
      - 36
-     - X_TSS proxy
+     - X_TSS
    * - 38
      - 37
      - Q_m3d
    * - 39
      - 38
-     - Temperature
+     - Temp
 
-Full 56-state order
--------------------
+Full state catalogue
+--------------------
 
 .. list-table::
    :header-rows: 1
 
    * - Python index
-     - Simulink index
      - State
-   * - 0
-     - 1
-     - S_O2
+     - Description
    * - 1
-     - 2
-     - S_F
+     - S_O2
+     - dissolved oxygen
    * - 2
-     - 3
-     - S_A
+     - S_F
+     - fermentable readily biodegradable substrate
    * - 3
-     - 4
-     - S_I
+     - S_A
+     - acetate / VFA-like soluble carbon
    * - 4
-     - 5
-     - S_NH4
+     - S_I
+     - soluble inert COD
    * - 5
-     - 6
-     - S_NH2OH
+     - S_NH4
+     - ammonium + ammonia nitrogen
    * - 6
-     - 7
-     - S_N2O
+     - S_NH2OH
+     - hydroxylamine intermediate
    * - 7
-     - 8
-     - S_NO
+     - S_N2O
+     - dissolved nitrous oxide
    * - 8
-     - 9
-     - S_NO2
+     - S_NO
+     - nitric oxide
    * - 9
-     - 10
-     - S_NO3
+     - S_NO2
+     - nitrite nitrogen
    * - 10
-     - 11
-     - S_N2
+     - S_NO3
+     - nitrate nitrogen
    * - 11
-     - 12
-     - S_PO4
+     - S_N2
+     - dissolved nitrogen gas
    * - 12
-     - 13
-     - S_IC
+     - S_PO4
+     - orthophosphate phosphorus
    * - 13
-     - 14
-     - X_I
+     - S_IC
+     - inorganic carbon
    * - 14
-     - 15
-     - X_S
+     - X_I
+     - particulate inert COD
    * - 15
-     - 16
-     - X_H
+     - X_S
+     - slowly biodegradable particulate substrate
    * - 16
-     - 17
-     - X_PAO
+     - X_H
+     - ordinary heterotrophic organisms
    * - 17
-     - 18
-     - X_PP
+     - X_PAO
+     - phosphate accumulating organisms
    * - 18
-     - 19
-     - X_PHA
+     - X_PP
+     - polyphosphate storage
    * - 19
-     - 20
-     - X_AOB
+     - X_PHA
+     - PHA storage polymers
    * - 20
-     - 21
-     - X_NOB
+     - X_AOB
+     - ammonia oxidizing biomass
    * - 21
-     - 22
-     - S_K
+     - X_NOB
+     - nitrite oxidizing biomass
    * - 22
-     - 23
-     - S_Mg
+     - S_K
+     - potassium
    * - 23
-     - 24
-     - S_SO4
+     - S_Mg
+     - magnesium
    * - 24
-     - 25
-     - S_Fe2
+     - S_SO4
+     - sulfate sulfur
    * - 25
-     - 26
-     - S_Fe3
+     - S_Fe2
+     - ferrous iron
    * - 26
-     - 27
-     - S_IS
+     - S_Fe3
+     - ferric iron
    * - 27
-     - 28
-     - X_S0
+     - S_IS
+     - soluble sulfide / inorganic sulfur pool
    * - 28
-     - 29
-     - X_SRB
+     - X_S0
+     - elemental sulfur solids
    * - 29
-     - 30
-     - X_HFO_L
+     - X_SRB
+     - sulfate reducing biomass
    * - 30
-     - 31
-     - X_HFO_H
+     - X_HFO_L
+     - low-reactivity hydrous ferric oxide
    * - 31
-     - 32
-     - X_HFO_LP
+     - X_HFO_H
+     - high-reactivity hydrous ferric oxide
    * - 32
-     - 33
-     - X_HFO_HP
+     - X_HFO_LP
+     - low-reactivity HFO with bound phosphate
    * - 33
-     - 34
-     - X_HFO_HP_old
+     - X_HFO_HP
+     - high-reactivity HFO with bound phosphate
    * - 34
-     - 35
-     - X_HFO_LP_old
+     - X_HFO_HP_old
+     - aged high-reactivity HFO-P fraction
    * - 35
-     - 36
-     - X_HFO_old
+     - X_HFO_LP_old
+     - aged low-reactivity HFO-P fraction
    * - 36
-     - 37
-     - X_TSS
+     - X_HFO_old
+     - aged HFO pool
    * - 37
-     - 38
-     - Q_m3d
+     - X_TSS
+     - total suspended solids proxy/state
    * - 38
-     - 39
-     - Temp
+     - Q_m3d
+     - volumetric flow
    * - 39
-     - 40
-     - S_Na
+     - Temp
+     - liquid temperature
    * - 40
-     - 41
-     - S_Cl
+     - S_Na
+     - sodium
    * - 41
-     - 42
-     - S_Ca
+     - S_Cl
+     - chloride
    * - 42
-     - 43
-     - AlOH3
+     - S_Ca
+     - calcium
    * - 43
-     - 44
-     - X_ISS0
+     - AlOH3
+     - aluminium hydroxide solids
    * - 44
-     - 45
-     - X_CaCO3
+     - X_ISS0
+     - inorganic suspended solids pool
    * - 45
-     - 46
-     - X_CaP
+     - X_CaCO3
+     - calcium carbonate solids
    * - 46
-     - 47
-     - X_struv
+     - X_CaP
+     - calcium phosphate solids
    * - 47
-     - 48
-     - X_Dummy1
+     - X_struv
+     - struvite solids
    * - 48
-     - 49
-     - S_CH4
+     - X_Dummy1
+     - reserved / unused placeholder
    * - 49
-     - 50
-     - X_Dummy2
+     - S_CH4
+     - dissolved methane
    * - 50
-     - 51
-     - X_Dummy3
+     - X_Dummy2
+     - reserved / unused placeholder
    * - 51
-     - 52
-     - X_Dummy4
+     - X_Dummy3
+     - reserved / unused placeholder
    * - 52
-     - 53
-     - XSOB
+     - X_Dummy4
+     - reserved / unused placeholder
    * - 53
-     - 54
-     - XAlPO4
+     - XSOB
+     - sulfur oxidizing biomass
    * - 54
-     - 55
-     - XCaO
+     - XAlPO4
+     - aluminium phosphate solids
    * - 55
-     - 56
+     - XCaO
+     - calcium oxide / lime-related solids placeholder
+   * - 56
      - XMgCO3
+     - magnesium carbonate solids placeholder
 
 Notes
 -----
 
-- ``X_TSS`` may be a direct state or a proxy depending on the surrounding workflow.
-- The safest practice is to define all indices once and reuse them everywhere.
+- ``Q_m3d`` and ``Temp`` are carried inside the same vector as biological and chemical
+  states, so index mistakes can destabilize the whole flowsheet.
+- Several late-vector states are placeholders or optional chemistry extensions. They
+  still must remain in the correct position.
