@@ -1,6 +1,6 @@
 # asm2dn2o
 
-Python package release for ASM2d-N2O dynamic process modelling.
+Python package for ASM2d-N2O dynamic process modelling.
 
 ## Installation
 
