@@ -1,6 +1,6 @@
 # asm2dn2o
 
-Python package for ASM2d-N2O dynamic process modelling.
+Python package for ASM2d-N₂O dynamic process modelling.
 
 ## Installation
 
@@ -13,3 +13,9 @@ Install from PyPI:
 
 ```bash
 pip install asm2dn2o
+
+Import from Python:
+
+.. code-block:: python
+
+   from asm2dn2o import asm2d_n2o, clarifiers, combiner, delay
