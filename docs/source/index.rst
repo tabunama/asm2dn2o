@@ -13,10 +13,10 @@ The ``asm2dn2o`` package publishes four compiled wastewater-process unit models 
    from asm2dn2o import asm2d_n2o, clarifiers, combiner, delay
 
 The ``asm2dn2o`` package is built around an ASM2d-N₂O reactor formulation that extends the IWA
-ASM2d framework for biological carbon, nitrogen, and phosphorus removal with
+ASM framework for biological carbon, nitrogen, and phosphorus removal with
 explicit nitrous oxide pathway representation and gas-transfer calculations.
 At the reactor level, the model resolves the simultaneous transformation and fate
-of COD, N, P, and S, while also tracking dissolved and off-gas N₂O dynamics.
+of C, N, P, and S, while also tracking dissolved and off-gas N₂O dynamics.
 
 N₂O pathways
 -------------------
