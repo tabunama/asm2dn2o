@@ -18,7 +18,7 @@ explicit nitrous oxide pathway representation and gas-transfer calculations.
 At the reactor level, the model resolves the simultaneous transformation and fate
 of COD, N, P, and S, while also tracking dissolved and off-gas N₂O dynamics.
 
-N2O pathways
+N₂O pathways
 -------------------
 
 The current ASM2d-N₂O implementation distinguishes three biological N₂O
