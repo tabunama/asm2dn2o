@@ -14,7 +14,7 @@ asm2dn2o: Python package license and attribution notice
    from asm2dn2o import asm2d_n2o, clarifiers, combiner, delay
 
 **Packaged and maintained by:**
-Dr Taher Abunama (tabunama@gmail.com)
+Dr. Taher Abunama (tabunama@gmail.com)
 
 Acknowledgements
 ----------------
@@ -28,7 +28,7 @@ programme funded by the European Commission and SPW Research, within the broader
 `Wallonia Research and Innovation framework <https://recherche.wallonie.be/en/home.html>`_
 and the `Marie Skłodowska-Curie Actions <https://marie-sklodowska-curie-actions.ec.europa.eu/actions/postdoctoral-fellowships>`_.
 
-The ``asm2dn2o`` package release was prepared and published with the `PROSYS <https://www.kt.dtu.dk/research/prosys>`_,
+The ``asm2dn2o`` package was prepared and published with the `PROSYS <https://www.kt.dtu.dk/research/prosys>`_,
 Process and Systems Engineering Center, Technical University of Denmark (DTU),
 under the Head of PROSYS: Prof. Krist V. Gernaey,
 Department of Chemical and Biochemical Engineering
@@ -44,7 +44,7 @@ DTU researchers have developed the ASM2d_N2O model you have downloaded.
 The models are available for the Matlab®/Simulink® platform. We have used
 Matlab release 2019b but the models will also work fine on later releases.
 
-Matlab®/Simulink® Original development / modification lineage:
+Matlab®/Simulink® C Original development / modification lineage:
 
 - Krist V. Gernaey (DTU/PROSYS, 2004)
 - Xavier Flores-Alsina (Lund University, 2010; later DTU/PROSYS)
@@ -83,7 +83,7 @@ Sincerely,
 Contact
 -------
 
-- Dr Taher Abunama — tabunama@gmail.com
 - Prof Krist V. Gernaey — kvg@kt.dtu.dk
+- Dr Taher Abunama — tabunama@gmail.com
 - Dr Xavier Flores-Alsina — xfa@kt.dtu.dk
 - Tianyu Lei — tilei@kt.dtu.dk
