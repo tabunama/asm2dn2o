@@ -6,13 +6,13 @@ Python package for ASM2d-N2O dynamic process modelling.
 Overview
 --------
 
-``asm2dn2o`` publishes compiled wastewater-process unit models under one namespace:
+The ``asm2dn2o`` package publishes four compiled wastewater-process unit models under one namespace:
 
 .. code-block:: python
 
    from asm2dn2o import asm2d_n2o, clarifiers, combiner, delay
 
-The ``asm2dn2o`` package package is built around an ASM2d-N2O reactor formulation that extends the IWA
+The ``asm2dn2o`` package is built around an ASM2d-N2O reactor formulation that extends the IWA
 ASM2d framework for biological carbon, nitrogen, and phosphorus removal with
 explicit nitrous oxide pathway representation and gas-transfer calculations.
 At the reactor level, the model resolves the simultaneous transformation and fate
