@@ -13,9 +13,29 @@ Install from PyPI:
 
 ```bash
 pip install asm2dn2o
+```
 
-Import from Python:
+## Import
 
-.. code-block:: python
+Import the package in Python with:
 
-   from asm2dn2o import asm2d_n2o, clarifiers, combiner, delay
+```python
+from asm2dn2o import asm2d_n2o, clarifiers, combiner, delay
+```
+
+## Current modules
+
+The package currently provides:
+
+- `asm2d_n2o` — main ASM2d-N₂O biochemical reactor kernel
+- `clarifiers` — primary and secondary clarifier separation blocks
+- `combiner` — flow-weighted two-stream mixer
+- `delay` — hydraulic delay / lag block
+
+
+## License and attribution
+
+See:
+
+- `LICENSE`
+- `THIRD_PARTY_NOTICES.md`
