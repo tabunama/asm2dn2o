@@ -1,10 +1,10 @@
-Full-Dataset Replay
+Plant wide WWTP
 ===================
 
 Purpose
 -------
 
-This example for Palnt wide WWTP workflow.
+Presents a Plant Wide WWTP workflow.
 
 Objective
 ---------

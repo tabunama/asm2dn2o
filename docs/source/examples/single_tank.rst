@@ -1,4 +1,4 @@
-Single Aeration Tank
+Single Tank
 ====================
 
 Purpose

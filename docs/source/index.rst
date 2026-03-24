@@ -54,6 +54,7 @@ ASM2d-N2O simulations:
    :caption: User Guide
 
    installation
+   n2o_pathways
    running
    inputs_outputs/index
    unit_modules/index
