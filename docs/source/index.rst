@@ -1,7 +1,7 @@
 asm2dn2o
 =========
 
-Python package for ASM2d-N2O dynamic process modelling.
+Python package for ASM2d-N₂O dynamic process modelling.
 
 Overview
 --------
@@ -12,16 +12,16 @@ The ``asm2dn2o`` package publishes four compiled wastewater-process unit models 
 
    from asm2dn2o import asm2d_n2o, clarifiers, combiner, delay
 
-The ``asm2dn2o`` package is built around an ASM2d-N2O reactor formulation that extends the IWA
+The ``asm2dn2o`` package is built around an ASM2d-N₂O reactor formulation that extends the IWA
 ASM2d framework for biological carbon, nitrogen, and phosphorus removal with
 explicit nitrous oxide pathway representation and gas-transfer calculations.
 At the reactor level, the model resolves the simultaneous transformation and fate
-of COD, N, P, and S, while also tracking dissolved and off-gas N2O dynamics.
+of COD, N, P, and S, while also tracking dissolved and off-gas N₂O dynamics.
 
 N2O pathways
 -------------------
 
-The current ASM2d-N2O implementation distinguishes three biological N2O
+The current ASM2d-N₂O implementation distinguishes three biological N₂O
 production pathways:
 
 1. **NN pathway**  
@@ -32,15 +32,15 @@ production pathways:
    strongly influenced by low-DO conditions.
 
 3. **DEN pathway**  
-   Heterotrophic denitrification, where N2O appears as an intermediate in the
+   Heterotrophic denitrification, where N₂O appears as an intermediate in the
    reduction chain:
 
    .. math::
 
       NO_3^- \rightarrow NO_2^- \rightarrow NO \rightarrow N_2O \rightarrow N_2
 
-This pathway separation is central to the model because it allows the user to
-interpret whether N2O are dominated by heterotrophic denitrification,
+This pathways separation is central to the model because it allows the user to
+interpret whether N₂O are dominated by heterotrophic denitrification,
 AOB-related nitrifier denitrification, or nitrifier nitrification
 contributions.
 
@@ -53,10 +53,9 @@ Why this package is useful
 The package is designed as a compact modelling kernel rather than a full
 end-user application. It gives the user the compiled building blocks needed to:
 
-- assemble dynamic ASM2d-N2O reactor simulations in Python,
-- build plant-specific AX/AR or broader flowsheets,
-- replay measured influent and recycle time series,
-- analyse DO, NH4, NO3, and N2O dynamics,
+- assemble dynamic ASM2d-N₂O reactor simulations in Python,
+- build plant-specific municipal anaerobic/anoxic/oxic (A2/O) or AX/AR tank layouts, as well as broader flowsheets,- replay measured influent and recycle time series,
+- analyse DO, NH₄, NO₃, and N₂O dynamics,
 - connect biological production with gas stripping and off-gas behaviour.
 
 The four modules are:
