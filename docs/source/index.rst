@@ -98,7 +98,7 @@ The ``asm2dn2o`` package release was prepared and published with the `PROSYS <ht
 Process and Systems Engineering Center, Technical University of Denmark (DTU),
 under the Head of PROSYS: Prof. Krist V. Gernaey,
 Department of Chemical and Biochemical Engineering
-(`kvg@kt.dtu.dk <mailto:kvg@kt.dtu.dk>`_), Dr Xavier Flores-Alsina, and Tianyu Lei.
+(`kvg@kt.dtu.dk <mailto:kvg@kt.dtu.dk>`_), Dr. Xavier Flores-Alsina, and Tianyu Lei.
 
 
 For license, attribution, and contact information, see
