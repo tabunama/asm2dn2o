@@ -27,10 +27,10 @@ from asm2dn2o import asm2d_n2o, clarifiers, combiner, delay
 
 The package currently provides:
 
-- `asm2d_n2o` — main ASM2d-N₂O biochemical reactor kernel
-- `clarifiers` — primary and secondary clarifier separation blocks
-- `combiner` — flow-weighted two-stream mixer
-- `delay` — hydraulic delay / lag block
+- `asm2d_n2o` : main ASM2d-N₂O biochemical reactor kernel
+- `clarifiers` : primary and secondary clarifier separation blocks
+- `combiner` : flow-weighted two-stream mixer
+- `delay` : hydraulic delay block
 
 
 ## License and attribution
