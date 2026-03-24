@@ -4,7 +4,7 @@ Single Tank
 Purpose
 -------
 
-Single Tank example.
+Presents a Single Tank example.
 
 Objective
 ---------

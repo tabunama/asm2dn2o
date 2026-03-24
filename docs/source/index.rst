@@ -104,8 +104,7 @@ Department of Chemical and Biochemical Engineering
 For license, attribution, and contact information, see
 :doc:`license_citation_contact`.
 
-User Guide
-----------
+
 
 .. toctree::
    :maxdepth: 2
