@@ -1,10 +1,10 @@
-N2O Pathways and Gas Transfer
+N₂O Pathways and Gas Transfer
 =============================
 
 Purpose
 -------
 
-This page documents how the current ``asm2d_n2o`` core represents N2O
+This page documents how the current ``asm2d_n2o`` core represents N₂O
 formation, conversion, and stripping. It is intended as a scientific
 reference page that connects the conceptual pathways to the actual
 process-rate terms implemented in the compiled reactor code.
@@ -12,7 +12,7 @@ process-rate terms implemented in the compiled reactor code.
 Scope 
 ---------------------------
 
-The current ASM2d-N2O reactor extends ASM2d with three biological N2O
+The current ASM2d-N₂O reactor extends ASM2d with three biological N₂O
 production pathways:
 
 1. **NN pathway**: nitrifier nitrification,
@@ -53,7 +53,7 @@ This is the nitrifier-nitrification route.
 This is the nitrifier-denitrification route.
 
 
-DEN pathway equations in the code
+DEN pathway equations
 ---------------------------------
 
 The heterotrophic denitrification chain is implemented separately for:
@@ -65,7 +65,7 @@ The heterotrophic denitrification chain is implemented separately for:
 SF-based branch
 ~~~~~~~~~~~~~~~
 
-NO2 to NO:
+NO₂ to NO:
 
 .. math::
 
@@ -78,7 +78,7 @@ NO2 to NO:
    \frac{S_{NO2}}{KH_{NO2}+S_{NO2}}
    \, Monod_{NH4} \, X_H
 
-NO to N2O:
+NO to N₂O:
 
 .. math::
 
@@ -91,7 +91,7 @@ NO to N2O:
    \frac{S_{NO}}{KH_{NO}+S_{NO}+S_{NO}^2/KI_{NO}}
    \, Monod_{NH4} \, X_H
 
-N2O to N2:
+N₂O to N2:
 
 .. math::
 
@@ -107,7 +107,7 @@ N2O to N2:
 SA-based branch
 ~~~~~~~~~~~~~~~
 
-NO2 to NO:
+NO₂ to NO:
 
 .. math::
 
@@ -120,7 +120,7 @@ NO2 to NO:
    \frac{S_{NO2}}{KH_{NO2}+S_{NO2}}
    \, Monod_{NH4} \, X_H
 
-NO to N2O:
+NO to N₂O:
 
 .. math::
 
@@ -133,7 +133,7 @@ NO to N2O:
    \frac{S_{NO}}{KH_{NO}+S_{NO}+S_{NO}^2/KI_{NO}}
    \, Monod_{NH4} \, X_H
 
-N2O to N2:
+N₂O to N₂:
 
 .. math::
 
@@ -148,10 +148,10 @@ N2O to N2:
 
 
 
-NN pathway equation in the code
+NN pathway equation
 -------------------------------
 
-The nitrifier-nitrification N2O production term is written as:
+The nitrifier-nitrification N₂O production term is written as:
 
 .. math::
 
@@ -164,7 +164,7 @@ The nitrifier-nitrification N2O production term is written as:
 
 
 
-ND pathway equation in the code
+ND pathway equation
 -------------------------------
 
 The nitrifier-denitrification term is written as:
@@ -195,7 +195,7 @@ where the oxygen dependence is:
 Gas transfer and stripping
 --------------------------
 
-The measured and simulated N2O signal is shaped strongly by stripping.
+The measured and simulated N₂O signal is shaped strongly by stripping.
 
 General gas-liquid transfer logic
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

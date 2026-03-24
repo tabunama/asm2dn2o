@@ -54,7 +54,8 @@ The package is designed as a compact modelling kernel rather than a full
 end-user application. It gives the user the compiled building blocks needed to:
 
 - assemble dynamic ASM2d-N₂O reactor simulations in Python,
-- build plant-specific municipal anaerobic/anoxic/oxic (A2/O) or AX/AR tank layouts; as well as broader flowsheets,
+- build plant-specific municipal anaerobic/anoxic/oxic (A2/O) or AX/AR tank layouts, including primary and secondary clarifiers, hydraulic combiner and delay,
+- test control logics on aeration, RAS, WAS, etc.
 - analyse DO, NH₄, NO₂, NO₃, and N₂O dynamics,
 - connect biological production with gas stripping and off-gas behaviour.
 
@@ -75,7 +76,8 @@ still requires user-prepared companion files such as:
 - initial-condition vectors XINIT,
 - basin-specific parameter vectors PAR,
 - clarifiers settings,
-- measured recycle (RAS/WAS) or blowers/airflow signals (or KLa),
+- measured recycle (RAS/WAS) hydrulics,
+- blowers/airflow signals (or KLa),
 - a plant-specific main driver.
 
 This separation is intentional: the wheel stays compact and reusable, while the
