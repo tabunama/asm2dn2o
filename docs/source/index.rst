@@ -1,18 +1,86 @@
 asm2dn2o
 =========
 
-Python package release for ASM2d-N2O dynamic process modelling.
+Python package for ASM2d-N2O dynamic process modelling.
 
-``asm2dn2o`` publishes four compiled unit-model modules under one namespace:
+Overview
+--------
+
+``asm2dn2o`` publishes compiled wastewater-process unit models under one namespace:
 
 .. code-block:: python
 
    from asm2dn2o import asm2d_n2o, clarifiers, combiner, delay
 
-The package is designed as a compact modelling kernel rather than a complete end-user
-application. Plant-wide simulations are assembled around these compiled units by
-preparing the required arrays, parameter vectors, initial conditions, and time-series
-inputs in Python.
+The ``asm2dn2o`` package package is built around an ASM2d-N2O reactor formulation that extends the IWA
+ASM2d framework for biological carbon, nitrogen, and phosphorus removal with
+explicit nitrous oxide pathway representation and gas-transfer calculations.
+At the reactor level, the model resolves the simultaneous transformation and fate
+of COD, N, P, and S, while also tracking dissolved and off-gas N2O dynamics.
+
+N2O pathway
+-------------------
+
+The current ASM2d-N2O implementation distinguishes three biological N2O
+production pathways:
+
+1. **NN pathway**  
+   Nitrifier nitrification by AOB, linked to hydroxylamine oxidation.
+
+2. **ND pathway**  
+   Nitrifier denitrification by AOB, driven by nitrite / free nitrous acid and
+   strongly influenced by low-DO conditions.
+
+3. **DEN pathway**  
+   Heterotrophic denitrification, where N2O appears as an intermediate in the
+   reduction chain:
+
+   .. math::
+
+      NO_3^- \rightarrow NO_2^- \rightarrow NO \rightarrow N_2O \rightarrow N_2
+
+This pathway separation is central to the model because it allows the user to
+interpret whether N2O are dominated by heterotrophic denitrification,
+AOB-related nitrifier denitrification, or nitrifier nitrification
+contributions.
+
+A more detailed equation-level description is provided on the dedicated
+:doc:`n2o_pathways` page.
+
+Why this package is useful
+--------------------------
+
+The package is designed as a compact modelling kernel rather than a full
+end-user application. It gives the user the compiled building blocks needed to:
+
+- assemble dynamic ASM2d-N2O reactor simulations in Python,
+- build plant-specific AX/AR or broader flowsheets,
+- replay measured influent and recycle time series,
+- analyse DO, NH4, NO3, and N2O dynamics,
+- connect biological production with gas stripping and off-gas behaviour.
+
+The four modules are:
+
+- ``asm2d_n2o``: main biochemical reactor kernel,
+- ``clarifiers``: primary and secondary clarifier blocks,
+- ``combiner``: flow-weighted two-stream mixer,
+- ``delay``: hydraulic delay / lag block.
+
+What the package does not contain by itself
+-------------------------------------------
+
+The modules provide the compiled kernels only. A full simulation project
+still requires user-prepared companion files such as:
+
+- influent / pH time-series files,
+- initial-condition vectors XINIT,
+- basin-specific parameter vectors PAR,
+- clarifiers settings,
+- measured recycle (RAS/WAS) or blowers/airflow signals (or KLa),
+- a plant-specific main driver.
+
+This separation is intentional: the wheel stays compact and reusable, while the
+flowsheet, control logic, data handling, and calibration remain project-specific.
 
 Acknowledgement
 ---------------
@@ -36,18 +104,8 @@ Department of Chemical and Biochemical Engineering
 For license, attribution, and contact information, see
 :doc:`license_citation_contact`.
 
-What the package contains
--------------------------
-
-The current wheel provides the reusable computational blocks needed to build dynamic
-ASM2d-N2O simulations:
-
-- ``asm2d_n2o``: the main biochemical reactor kernel.
-- ``clarifiers``: primary and secondary clarifier wrappers.
-- ``combiner``: two-stream mixing.
-- ``delay``: hydraulic transport and recycle delay handling.
-
-
+User Guide
+----------
 
 .. toctree::
    :maxdepth: 2
