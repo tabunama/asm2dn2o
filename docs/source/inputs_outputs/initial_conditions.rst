@@ -47,7 +47,7 @@ Interpretation notes
 - ``Q_m3d`` and ``Temp`` must already be meaningful in the initial vectors.
 
 XINIT values for AR, AX, DELAY
-------------------------
+--------------------------------------
 
 .. csv-table:: SS initial values (columns are AR, AX, DELAY)
    :header: "Simulink index", "State", "Description", "AR", "AX", "DELAY"

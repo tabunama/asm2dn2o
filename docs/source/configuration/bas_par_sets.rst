@@ -21,7 +21,7 @@ helpful because it keeps both basins aligned against the same parameter index ma
 
 
 Full PAR parameter catalogue
----------------------------
+-------------------------------------
 
 .. csv-table:: PAR_COMB_SS values
    :header: "Idx", "Name", "Group", "AR", "AX"

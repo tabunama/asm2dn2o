@@ -1,10 +1,6 @@
 Citation, License and Contact
 =============================
 
-**Packaged and maintained by:**
-Dr. Taher Abunama
-
-
 Citation
 ----------------
 ASM2d-N₂O Python Package (2026).

@@ -34,7 +34,7 @@ Typical structure
 
  
 Recommended plots - diagnostics
------------------------
+-------------------------------
 
 A full replay example should save or plot:
 

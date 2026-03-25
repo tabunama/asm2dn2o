@@ -215,7 +215,7 @@ Primary and secondary clarifier settings are configured independently:
      - [d]
 
 Current clarifier solids vector actually used by the Python clarifier cores
---------------------------------------------------------------------------
+-----------------------------------------------------------------------------------
 
 The current clarifier wrappers use the first nine solids-characterization entries.
 These are:
