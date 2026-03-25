@@ -14,8 +14,7 @@ Acknowledgements:
     The ``asm2dn2o`` package was initially prepared during the `eWatLink <https://cebedeau.be/fr/nos-chroniques/article/projet-ewatlink>`_ project at
     `SPGE <https://www.spge.be/en/index.html?IDC=1>`_ and `CEBEDEAU <https://cebedeau.be/fr>`_,
     through the `BEWARE Fellowships <https://recherche.wallonie.be/en/home/nos-aides-1/engager-du-personnel-de-recherche-human/beware-fellowships.html>`_
-    programme funded by the European Commission and SPW Research, within the broader
-    `Wallonia Research and Innovation framework <https://recherche.wallonie.be/en/home.html>`_
+    programme funded by the European Commission and SPW Research, within the `Wallonia Research and Innovation framework <https://recherche.wallonie.be/en/home.html>`_
     and the `Marie Skłodowska-Curie Actions <https://marie-sklodowska-curie-actions.ec.europa.eu/actions/postdoctoral-fellowships>`_.
 
     The ``asm2dn2o`` package release was prepared and published with the `PROSYS <https://www.kt.dtu.dk/research/prosys>`_,

@@ -56,7 +56,7 @@ future. You are always welcome to contact us on such matters.
 
 Sincerely,
 
-- Prof Krist V. Gernaey
+Prof Krist V. Gernaey
 
 Contact
 -------
