@@ -1,39 +1,18 @@
-License, Citation and Contact
+Citation, License and Contact
 =============================
-
-asm2dn2o: Python package license and attribution notice
--------------------------------------------------------
-
-**Package:** ``asm2dn2o``  
-**Install via:** ``pip install asm2dn2o``
-
-**Modules provided:**
-
-.. code-block:: python
-
-   from asm2dn2o import asm2d_n2o, clarifiers, combiner, delay
 
 **Packaged and maintained by:**
 Dr. Taher Abunama (tabunama@gmail.com)
 
-Acknowledgements
+
+Citation
 ----------------
+ASM2d-N₂O Python Package (2026).
+Taher Abunama, Stéphane Nonet, Nicolas Staelens, Tianyu Lei, Xavier Flores-Alsina, and Krist V. Gernaey. 
+`https://tabunama.github.io/asm2dn2o/index.html <https://tabunama.github.io/asm2dn2o/index.html>`_
 
-The ``asm2dn2o`` package was prepared by `Dr. Taher Abunama <mailto:tabunama@gmail.com>`_, based on the original model by Prof. Krist V. Gernaey and his team (PROSYS, DTU).
 
-The ``asm2dn2o`` package was initially prepared during the `eWatLink <https://cebedeau.be/fr/nos-chroniques/article/projet-ewatlink>`_ project at
-`SPGE <https://www.spge.be/en/index.html?IDC=1>`_ and `CEBEDEAU <https://cebedeau.be/fr>`_,
-through the `BEWARE Fellowships <https://recherche.wallonie.be/en/home/nos-aides-1/engager-du-personnel-de-recherche-human/beware-fellowships.html>`_
-programme funded by the European Commission and SPW Research, within the broader
-`Wallonia Research and Innovation framework <https://recherche.wallonie.be/en/home.html>`_
-and the `Marie Skłodowska-Curie Actions <https://marie-sklodowska-curie-actions.ec.europa.eu/actions/postdoctoral-fellowships>`_.
-
-The ``asm2dn2o`` package release was prepared and published with the `PROSYS <https://www.kt.dtu.dk/research/prosys>`_,
-Process and Systems Engineering Center, Technical University of Denmark (DTU),
-under the Head of PROSYS: `Prof. Krist V. Gernaey <mailto:kvg@kt.dtu.dk>`_,
-Department of Chemical and Biochemical Engineering, Dr. Xavier Flores-Alsina, and Tianyu Lei.
-
-Upstream license agreement / academic-use terms (DTU/PROSYS)
+Upstream license agreement (DTU/PROSYS)
 ------------------------------------------------------------
 
 Dear Colleague,
@@ -43,10 +22,10 @@ DTU researchers have developed the ASM2d_N2O model you have downloaded.
 The models are available for the Matlab®/Simulink® platform. We have used
 Matlab release 2019b but the models will also work fine on later releases.
 
-Matlab®/Simulink® C Original development / modification lineage:
+Matlab®/Simulink®/C Original development and modification lineage:
 
 - Krist V. Gernaey (DTU/PROSYS, 2004)
-- Xavier Flores-Alsina (Lund University, 2010; later DTU/PROSYS)
+- Xavier Flores-Alsina (Lund University, 2010; DTU/PROSYS)
 - Kimberly Solon (Lund University, 2016)
 - Borja Soles (UAB, 2020)
 - Tianyu Lei (DTU/PROSYS, 2023)
@@ -77,7 +56,7 @@ future. You are always welcome to contact us on such matters.
 
 Sincerely,
 
-- Prof Krist V. Gernaey (kvg@kt.dtu.dk)
+- Prof Krist V. Gernaey 
 
 Contact
 -------

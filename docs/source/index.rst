@@ -101,8 +101,8 @@ under the Head of PROSYS: `Prof. Krist V. Gernaey <mailto:kvg@kt.dtu.dk>`_,
 Department of Chemical and Biochemical Engineering, Dr. Xavier Flores-Alsina, and Tianyu Lei.
 
 
-For license, attribution, and contact information, see
-:doc:`license_citation_contact`.
+For citation, license and contact information, see:
+:doc:`citation_license_contact`.
 
 
 
@@ -117,4 +117,4 @@ For license, attribution, and contact information, see
    unit_modules/index
    configuration/index
    examples/index
-   license_citation_contact
+   citation_license_contact
