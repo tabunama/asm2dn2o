@@ -96,11 +96,13 @@ For citation, license and contact information, see:
    :caption: User Guide
 
    installation
-   n2o_pathways
    running
    inputs_outputs/index
    unit_modules/index
    configuration/index
    examples/index
+   n2o_pathways
+   n2o_ef_cal
+   n2o_unisense_cal
    acknowledgement
    citation_license_contact
