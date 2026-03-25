@@ -2,7 +2,7 @@ Citation, License and Contact
 =============================
 
 **Packaged and maintained by:**
-Dr. Taher Abunama (tabunama@gmail.com)
+Dr. Taher Abunama
 
 
 Citation
