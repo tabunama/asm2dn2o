@@ -4,11 +4,10 @@ Emission Factor (EF) Calculation
 Emission factor definition
 --------------------------
 
-The emission factor (EF) is reported as the fraction of influent total nitrogen
-load emitted as :math:`\mathrm{N_2O\text{-}N}` over the evaluation period.
+The emission factor (EF) is expressed as the percentage of influent total
+nitrogen emitted as :math:`\mathrm{N_2O\text{-}N}` over the evaluation period.
 
-Continuous form
-~~~~~~~~~~~~~~~
+For a time series with time step :math:`\Delta t` in days, the EF is calculated as:
 
 .. math::
 
@@ -16,38 +15,22 @@ Continuous form
    =
    100
    \frac{
-      \int_{t_0}^{t_f} E_{N_2O,tot}(t)\,dt
+      \sum_{n}
+      E_{N_2O,tot,n}\,\Delta t
    }{
-      \int_{t_0}^{t_f}
-      \frac{Q_{in}(t)\,TN_{in}(t)}{1000}
-      \, dt
+      \sum_{n}
+      \left(
+         \frac{Q_{in,n}\,TN_{in,n}}{1000}
+      \right)\Delta t
    }
 
 where:
 
-- :math:`E_{N_2O,tot}(t)` is in :math:`\mathrm{kg \; N \; d^{-1}}`,
-- :math:`Q_{in}(t)` is in :math:`\mathrm{m^3 \; d^{-1}}`,
-- :math:`TN_{in}(t)` is in :math:`\mathrm{g \; N \; m^{-3}}`.
+- :math:`E_{N_2O,tot,n}` is the total emitted N₂O mass rate at time step
+  :math:`n`, in :math:`\mathrm{kg \; N \; d^{-1}}`,
+- :math:`Q_{in,n}` is the influent flow rate at time step :math:`n`, in
+  :math:`\mathrm{m^3 \; d^{-1}}`,
+- :math:`TN_{in,n}` is the influent total nitrogen concentration at time step
+  :math:`n`, in :math:`\mathrm{g \; N \; m^{-3}}`,
+- :math:`\Delta t` is the time step in days.
 
-Discrete form
-~~~~~~~~~~~~~
-
-For a discrete time series with step size :math:`\Delta t` in days:
-
-.. math::
-
-   EF_{N_2O}
-   =
-   100
-   \frac{
-      \sum_n E_{N_2O,tot,n}\,\Delta t
-   }{
-      \sum_n
-      \left(
-         \frac{Q_{in,n}\,TN_{in,n}}{1000}
-      \right)
-      \Delta t
-   }
-
-This EF definition is widely used because it normalizes emitted
-:math:`\mathrm{N_2O\text{-}N}` by the incoming total nitrogen load.
