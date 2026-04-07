@@ -11,6 +11,19 @@ dist/
 __pycache__/
 *.pyc
 
+
+#
+asm3model/
+c_core/
+c_sim/
+
+#
+notes.txt
+setup.py
+setup_build_ext.py
+smoke_test_api.py
+README_API.txt
+
 # Docs build
 docs/build/
 
@@ -18,13 +31,13 @@ docs/build/
 c_core/
 cython/
 
-# Optional local/helper files
-run_build.txt
-check.py
 
+# Keep documentation and legal files tracked
+!docs/
+!docs/**
+!README.md
+!LICENSE
+!THIRD_PARTY_NOTICES.md
 
-MANIFEST.in
-TR/
-asm2dn2o/
-pyproject.toml
-setup.py
+!.github/
+!.github/**
