@@ -13,7 +13,7 @@ __pycache__/
 
 
 #
-asm3model/
+asm2dn2o/
 c_core/
 c_sim/
 
@@ -41,3 +41,11 @@ cython/
 
 !.github/
 !.github/**
+
+run_build.txt
+check.py
+
+MANIFEST.in
+
+docs/build/
+pyproject.toml
