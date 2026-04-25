@@ -59,37 +59,12 @@ end-user application. It gives the user the compiled building blocks needed to:
 - analyse DO, NH₄, NO₂, NO₃, and N₂O dynamics,
 - connect biological production with gas stripping and off-gas behaviour.
 
-The four modules are:
-
-- ``asm2d_n2o``: main biochemical reactor kernel,
-- ``clarifiers``: primary and secondary clarifier blocks,
-- ``combiner``: flow-weighted two-stream mixer,
-- ``delay``: hydraulic delay / lag block.
-
-What the package does not contain by itself
--------------------------------------------
-
-The modules provide the compiled kernels only. A full simulation project
-still requires user-prepared companion files such as:
-
-- influent / pH time-series files,
-- initial-condition vectors XINIT,
-- basin-specific parameter vectors PAR,
-- clarifiers settings,
-- measured recycle (RAS/WAS) hydrulics,
-- blowers/airflow signals (or KLa),
-- a plant-specific main driver.
-
-This separation is intentional: the wheel stays compact and reusable, while the
-flowsheet, control logic, data handling, and calibration remain project-specific.
 
 For authors acknowledgement, see:
 :doc:`acknowledgement`.
 
 For citation, license and contact information, see:
 :doc:`citation_license_contact`.
-
-
 
 .. toctree::
    :maxdepth: 2
