@@ -15,13 +15,18 @@ The same compiled model can be used through three PyPI package names:
    pip install asm2dg
 
 The main package is ``asm2dn2o``. The packages ``asm2dghg`` and ``asm2dg`` are
-aliases that depend on ``asm2dn2o`` and expose the same compiled model engine.
+aliases to ``asm2dn2o`` and expose the same compiled four models:
+
+- `asm2d_n2o` = `asm2d_ghg` = `asm2d_g` : ASM2d-GHG/N₂O biochemical reactor
+- `clarifiers` : primary and secondary clarifier separation
+- `combiner` : flow-weighted two-stream mixer
+- `delay` : hydraulic delay
 
 .. code-block:: python
 
    from asm2dn2o import asm2d_n2o, clarifiers, combiner, delay
-   from asm2dghg import asm2d_ghg
-   from asm2dg import asm2d_g
+   from asm2dghg import asm2d_ghg, clarifiers, combiner, delay
+   from asm2dg import asm2d_g, clarifiers, combiner, delay
 
 The model extends the IWA ASM framework for biological carbon, nitrogen, and
 phosphorus removal with explicit nitrous oxide pathway representation and
