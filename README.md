@@ -1,4 +1,4 @@
-# asm2dn2o
+# ASM2d-GHG(N₂O)
 
 Python package for ASM2d-GHG(N₂O) dynamic process modelling.
 
