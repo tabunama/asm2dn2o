@@ -1,12 +1,6 @@
 Installation
 ============
 
-Purpose
--------
-
-This page explains how to install the published package and what is included in
-the PyPI wheel.
-
 Install from PyPI
 -----------------
 

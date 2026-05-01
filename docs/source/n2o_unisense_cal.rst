@@ -347,21 +347,4 @@ measurement zones, then total emitted mass over a day is:
    +
    \sum_k E_{N_2O,non,k}
 
-For a time series, this quantity is evaluated at each time step and then
-integrated or summed over the reporting window.
 
-Recommended implementation workflow
------------------------------------
-
-A clear workflow for using measured dissolved N₂O is:
-
-1. measure :math:`S_{N_2O}` in aerated and non-aerated zones,
-2. measure or reconstruct :math:`Q_A`, :math:`T_{proc}`, and :math:`A_{aer}`,
-3. compute :math:`\nu_g`,
-4. compute :math:`kLa_{N_2O,20}`,
-5. temperature-correct to :math:`kLa_{N_2O,T}`,
-6. compute :math:`H_{N_2O,T}`,
-7. compute zone-wise emission rates,
-8. convert to emitted daily mass,
-9. sum across zones,
-10. compute the EF over the chosen evaluation window.
