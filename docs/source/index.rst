@@ -1,7 +1,7 @@
-ASM2d-GHG(N₂O)
+ASM2d-GHG/N₂O
 ================
 
-Python package for ASM2d-GHG(N₂O) dynamic process modelling.
+Python package for ASM2d-GHG/N₂O dynamic process modelling.
 
 Overview
 --------
@@ -63,7 +63,7 @@ Why this package is useful
 The package is designed as a compact modelling kernel rather than a full
 end-user application. It gives the user the compiled building blocks needed to:
 
-- assemble dynamic ASM2d-GHG(N₂O) reactor simulations in Python,
+- assemble dynamic ASM2d-GHG/N₂O reactor simulations in Python,
 - build plant-specific municipal anaerobic/anoxic/oxic (A2/O) or other layouts; including primary and secondary clarifiers, hydraulic combiner and delay, etc.,
 - test control logics on aeration, RAS, WAS, etc.
 - analyse DO, NH₄, NO₂, NO₃, and N₂O dynamics,

@@ -1,4 +1,4 @@
-Running ASM2d-GHG(N₂O)
+Running ASM2d-GHG/N₂O
 ================================================
 
 Purpose

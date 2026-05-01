@@ -3,11 +3,11 @@ Citation, License and Contact
 
 Citation
 ----------------
-ASM2d-GHG(N₂O) Python Package (2026).
+ASM2d-GHG/N₂O Python Package (2026).
 Taher Abunama, Stéphane Nonet, Nicolas Staelens, Tianyu Lei, Xavier Flores-Alsina, and Krist V. Gernaey. 
 `https://tabunama.github.io/asm2dn2o/index.html <https://tabunama.github.io/asm2dn2o/index.html>`_
 
-ASM2d-GHG(N₂O) names: The ``asm2dn2o`` package is the main compiled package; ``asm2dghg`` and
+ASM2d-GHG/N₂O names: The ``asm2dn2o`` package is the main compiled package; ``asm2dghg`` and
 ``asm2dg`` are aliases for the same model engine.
 
 Upstream license agreement (DTU/PROSYS)

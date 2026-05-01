@@ -10,7 +10,7 @@ the PyPI wheel.
 Install from PyPI
 -----------------
 
-The same compiled ASM2d-GHG(N₂O) model can be installed using any of the
+The same compiled ASM2d-GHG/N₂O model can be installed using any of the
 following package names:
 
 .. code-block:: bash
