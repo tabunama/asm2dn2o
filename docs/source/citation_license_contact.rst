@@ -3,22 +3,21 @@ Citation, License and Contact
 
 Citation
 ----------------
-ASM2d-N₂O Python Package (2026).
+ASM2d-GHG(N₂O) Python Package (2026).
 Taher Abunama, Stéphane Nonet, Nicolas Staelens, Tianyu Lei, Xavier Flores-Alsina, and Krist V. Gernaey. 
 `https://tabunama.github.io/asm2dn2o/index.html <https://tabunama.github.io/asm2dn2o/index.html>`_
 
+ASM2d-GHG(N₂O) names: The ``asm2dn2o`` package is the main compiled package; ``asm2dghg`` and
+``asm2dg`` are aliases for the same model engine.
 
 Upstream license agreement (DTU/PROSYS)
 ------------------------------------------------------------
 
 Dear Colleague,
 
-DTU researchers have developed the ASM2d_N2O model you have downloaded.
+DTU researchers have developed the ASM2d_N2O model.
 
-The models are available for the Matlab®/Simulink® platform. We have used
-Matlab release 2019b but the models will also work fine on later releases.
-
-Matlab®/Simulink®/C Original development and modification lineage:
+Matlab Original development and modification lineage:
 
 - Krist V. Gernaey (DTU/PROSYS, 2004)
 - Xavier Flores-Alsina (Lund University, 2010; DTU/PROSYS)

@@ -1,7 +1,6 @@
-asm2dn2o – Third-Party Notices / Attribution
+``ASM2d-GHG(N₂O)`` : Third-Party Notices / Attribution
 
-This distribution contains compiled extensions that are derived from the ASM2d\_N2O model and related wastewater process model components (reactor, clarifiers, combiner, delay).
-
+This distribution contains compiled extensions that are derived from the ``ASM2d-GHG(N₂O)`` model and related wastewater process model components (reactor, clarifiers, combiner, delay).
 
 
 Upstream terms

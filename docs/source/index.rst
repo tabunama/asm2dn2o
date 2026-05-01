@@ -1,22 +1,32 @@
-asm2dn2o
-=========
+ASM2d-GHG(N₂O)
+================
 
-Python package for ASM2d-N₂O dynamic process modelling.
+Python package for ASM2d-GHG(N₂O) dynamic process modelling.
 
 Overview
 --------
 
-The ``asm2dn2o`` package publishes four compiled wastewater-process unit models under one namespace:
+The same compiled model can be used through three PyPI package names:
+
+.. code-block:: bash
+
+   pip install asm2dn2o
+   pip install asm2dghg
+   pip install asm2dg
+
+The main package is ``asm2dn2o``. The packages ``asm2dghg`` and ``asm2dg`` are
+aliases that depend on ``asm2dn2o`` and expose the same compiled model engine.
 
 .. code-block:: python
 
    from asm2dn2o import asm2d_n2o, clarifiers, combiner, delay
+   from asm2dghg import asm2d_ghg
+   from asm2dg import asm2d_g
 
-The ``asm2dn2o`` package is built around an ASM2d-N₂O model that extends the IWA
-ASM framework for biological carbon, nitrogen, and phosphorus removal with
-explicit nitrous oxide pathway representation and gas-transfer calculations.
-At the reactor level, the model resolves the simultaneous transformation and fate
-of C, N, P, and S, while also tracking dissolved and off-gas N₂O dynamics.
+The model extends the IWA ASM framework for biological carbon, nitrogen, and
+phosphorus removal with explicit nitrous oxide pathway representation and
+gas-transfer calculations. At reactor level, it resolves C, N, P, and S
+transformations while tracking dissolved and off-gas N₂O dynamics.
 
 N₂O pathways
 -------------------
@@ -53,7 +63,7 @@ Why this package is useful
 The package is designed as a compact modelling kernel rather than a full
 end-user application. It gives the user the compiled building blocks needed to:
 
-- assemble dynamic ASM2d-N₂O reactor simulations in Python,
+- assemble dynamic ASM2d-GHG(N₂O) reactor simulations in Python,
 - build plant-specific municipal anaerobic/anoxic/oxic (A2/O) or other layouts; including primary and secondary clarifiers, hydraulic combiner and delay, etc.,
 - test control logics on aeration, RAS, WAS, etc.
 - analyse DO, NH₄, NO₂, NO₃, and N₂O dynamics,

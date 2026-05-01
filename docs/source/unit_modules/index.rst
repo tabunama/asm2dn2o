@@ -13,6 +13,8 @@ usage is:
 .. code-block:: python
 
    from asm2dn2o import asm2d_n2o, clarifiers, combiner, delay
+   from asm2dghg import asm2d_ghg
+   from asm2dg import asm2d_g
 
 .. toctree::
    :maxdepth: 1

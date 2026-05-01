@@ -49,3 +49,7 @@ MANIFEST.in
 
 docs/build/
 pyproject.toml
+
+
+alias_packages/
+tools_private/
